@@ -55,7 +55,7 @@ public class ProductController {
 	
 	
 	@GetMapping(value = "products/category/{category}")
-	public ResponseEntity<List<producttable>> findByAge(@PathVariable String category) {
+	public ResponseEntity<List<producttable>> findByCategory(@PathVariable String category) {
 		try {
 			List<producttable> customers = repository.findByCategory(category);
 
